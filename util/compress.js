@@ -2,7 +2,7 @@ const sharp = require("sharp");
 
 function compress(input, webp, grayscale, quality, originSize) {
 	const format = webp ? "webp" : "jpeg";
-        let compressionQuality = quality * 0.05;  //use const by default
+        let compressionQuality = quality * 0.01;  //use const by default
 
         quality = Math.ceil(compressionQuality);
 
